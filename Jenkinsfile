@@ -6,14 +6,6 @@ pipeline {
     }
 
     stages {
-                stage('Format Code') {
-            steps {
-                dir(PROJECT_DIR) {
-                        // Automatically format the code
-                        bat "${MAVEN_HOME}\\bin\\mvn spring-javaformat:apply"
-                }
-            }
-                }
 
         stage('Build') {
             steps {
