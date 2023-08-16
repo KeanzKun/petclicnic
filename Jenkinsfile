@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_DIR = 'C:\Users\kean5\OneDrive\Desktop\Degree\SCC\Assignment\spring-petclinic'
+        PROJECT_DIR = 'C:\\Users\\kean5\\OneDrive\\Desktop\\Degree\\SCC\\Assignment\\spring-petclinic'
     }
 
     stages {
