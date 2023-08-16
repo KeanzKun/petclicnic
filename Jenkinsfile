@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Navigate to the project directory
-                dir('C:\Users\kean5\OneDrive\Desktop\Degree\SCC\Assignment\spring-petclinic') {
+                dir(PROJECT_DIR) {
                     // Execute your build commands
                     sh 'mvn install'
                 }
@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Navigate to the project directory
-                dir('C:\Users\kean5\OneDrive\Desktop\Degree\SCC\Assignment\spring-petclinic') {
+                dir(PROJECT_DIR) {
                     // Execute your test commands
                     sh 'mvn test'
                 }
