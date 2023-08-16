@@ -4,24 +4,24 @@ pipeline {
     environment {
         PROJECT_DIR = 'C:\\Users\\kean5\\OneDrive\\Desktop\\Degree\\SCC\\Assignment\\spring-petclinic'
     }
-
+    
     stages {
         stage('Build') {
             steps {
                 // Navigate to the project directory
                 dir(PROJECT_DIR) {
                     // Execute your build commands
-                    sh 'mvn install'
+                    bat 'mvn install'
                 }
             }
         }
-
+        
         stage('Test') {
             steps {
                 // Navigate to the project directory
                 dir(PROJECT_DIR) {
                     // Execute your test commands
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
