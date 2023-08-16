@@ -46,7 +46,7 @@ pipeline {
     
     post {
         always {
-            // This section can contain tasks you want to always execute regardless of build outcome
+            echo 'Test'
         }
         
         success {
